@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Embroidery Design Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Embroidery Design Tool</h1>
+    </header>
+    
+    <section class="uploader">
+        <h2>Upload Your Design</h2>
+        <label for="imageUpload">Upload Image:</label>
+        <input type="file" id="imageUpload" accept="image/*">
+    </section>
+    
+    <section class="canvas-container">
+        <h2>Your Design Canvas</h2>
+        <canvas id="designCanvas"></canvas>
+    </section>
+    
+    <section class="filter-options">
+        <h2>Apply Filters</h2>
+        <label for="filters">Choose a filter:</label>
+        <select id="filters">
+            <option value="none">None</option>
+            <option value="vectorize">Vectorize</option>
+            <option value="brightness">Brightness</option>
+            <option value="threadMapping">Thread Mapping</option>
+        </select>
+        <div id="brightness-control" style="display: none;">
+            <label for="brightness">Brightness:</label>
+            <input type="range" id="brightness" min="-100" max="100" value="0">
+        </div>
+        <div class="controls">
+            <button id="adjustPatterns">Adjust Patterns</button>
+            <button id="visualizeDesign">Visualize Design</button>
+            <button id="downloadDesign">Download Design</button>
+        </div>
+    </section>
+
+    <section class="color-info">
+        <h2>Color and Thread Information</h2>
+        <div id="colorInfoList"></div>
+    </section>
+
+    <section class="samples">
+        <h2>Sample Embroidery Designs</h2>
+        <div class="sample-gallery">
+            <div class="sample">
+                <img src="sample1.jpg" alt="Sample Design 1">
+                <p>Floral Embroidery</p>
+            </div>
+            <div class="sample">
+                <img src="sample2.jpg" alt="Sample Design 2">
+                <p>Modern Geometric Patterns</p>
+            </div>
+            <div class="sample">
+                <img src="sample3.jpg" alt="Sample Design 3">
+                <p>Animal Embroidery</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="tips">
+        <h2>Embroidery Tips</h2>
+        <ul>
+            <li>Always use high-quality thread to ensure durability.</li>
+            <li>Keep your fabric taut in the hoop to avoid puckering.</li>
+            <li>Use sharp needles for clean and precise stitches.</li>
+            <li>Choose the right stabilizer for delicate fabrics.</li>
+            <li>Practice different stitches to enhance your skills.</li>
+        </ul>
+    </section>
+    
+    <section class="stories">
+        <h2>User Stories</h2>
+        <div class="story">
+            <h3>Maria's Journey into Embroidery</h3>
+            <p>Maria started her embroidery journey two years ago and has since created stunning pieces that blend traditional and modern styles. Her attention to detail and passion for colors make her work stand out.</p>
+        </div>
+        <div class="story">
+            <h3>John's Experience with Digital Embroidery Design</h3>
+            <p>John transitioned from hand embroidery to digital design using our tool. His ability to visualize and convert intricate designs has opened up new opportunities for his small business.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Interactive Embroidery Design Tool. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

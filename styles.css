@@ -1,0 +1,108 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #e3f2fd; /* Light blue background */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #7e57c2; /* Purple shade */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #00796b; /* Teal shade for headings */
+    margin-top: 0;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(145deg, #b2dfdb, #f1f8e9); /* Blue-green gradient */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input, select, button {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #5c6bc0; /* Blue shade */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3949ab; /* Darker blue on hover */
+}
+
+.canvas-container {   
+    text-align: center;
+    overflow: auto;
+}
+
+canvas {
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+.color-info {
+    background: #ffffff; /* White background */
+    border-radius: 8px;
+    color: #333;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.color-info-item {
+    background: #e8eaf6; /* Light purple for differentiation */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sample-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sample img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    margin-bottom: 10px;
+}
+
+.sample img:hover {
+    transform: scale(1.1);
+}
+
+.tips ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #7e57c2; /* Matching header */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
